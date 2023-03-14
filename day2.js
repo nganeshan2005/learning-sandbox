@@ -12,4 +12,19 @@ class Car {
 
 var car1 = new Car('Toyota', 'Red', 'Petrol', 23);
 
-console.log(car1.Speed())
+// console.log(car1.Speed())
+
+class PremiumCar extends Car {
+    constructor(){
+    super(brand, color, type, mileage)
+    }
+    IsPremium(){
+        console.log(super.this.Brand);
+        console.log(`${this.Brand} is Premium Car`);
+        
+    };
+}
+
+// var car2 = new PremiumCar(Audi)
+
+// console.log (car2.IsPremium(Audi))

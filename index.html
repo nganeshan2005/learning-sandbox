@@ -4,12 +4,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="index.css">
     <title>Learning-Sandbox</title>
 </head>
 <body>
 
-    <h1 class="typo">Sandbox Works</h1>
+    <h1 class="typo">Sandbox</h1>
+
+    <div class="dropdown-group dropdown-reg dropdown-primary">
+        <div class="dropdown-btn">
+            <div class="dropdown-label">
+                <span class="material-symbols-outlined" style="margin-right:6px; font-size:20px">star</span>
+                <span class="dropdown-text">Dropdown label</span>
+            </div>
+            <!-- <span class="info-bubble">2 of 25</span> -->
+            <div class="dropdown-caret material-symbols-outlined">expand_more</div>
+        </div>
+        <div class="dropdown-menu menu-slideIn" style="display:none">
+            <div class="dropdown-item">
+                <span>Item one</span>
+            </div>
+            <div class="dropdown-item">
+                <span>Item Two</span>
+            </div>
+            <div class="dropdown-item">
+                <span>Item Three</span>
+            </div>
+        </div>
+    </div>
     
 
     <script src="index.js"></script>
