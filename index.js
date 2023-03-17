@@ -33,32 +33,43 @@ const user1 = new UsersTemplate(User1_data);
 // console.log(user1, typeof user1.occupation);
 
 
-const   dropGroup = document.querySelector('.dropdown-group'),
-        dropLabel = document.querySelector('.dropdown-label'),
-        dropMenu = document.querySelector('.dropdown-menu'),
-        dropBtn = document.querySelector('.dropdown-btn'),
-        dropItem = document.querySelectorAll('.dropdown-item'),
-        dropText = document.querySelector('.dropdown-text');
+// const   dropGroup = document.querySelector('.dropdown-group'),
+//         dropLabel = document.querySelector('.dropdown-label'),
+//         dropMenu = document.querySelector('.dropdown-menu'),
+//         dropBtn = document.querySelector('.dropdown-btn'),
+//         dropItem = document.querySelectorAll('.dropdown-item'),
+//         dropText = document.querySelector('.dropdown-text');
 
-window.addEventListener('click', function(e){
-    e.stopPropagation();
-    if (e.target == dropBtn && dropMenu.style.display !== 'block'){
-        dropMenu.style.display = 'block';
-    } else {
-        dropMenu.style.display = 'none';
-    };
-}, false);
+// window.addEventListener('click', function(e){
+//     e.stopPropagation();
+//     if (e.target == dropBtn && dropMenu.style.display !== 'block'){
+//         dropMenu.style.display = 'block';
+//     } else {
+//         dropMenu.style.display = 'none';
+//     };
+// }, false);
 
-dropItem.forEach(function(ele){
-    ele.addEventListener('click', function(e){
-        if(e.target == ele){
-            dropText.innerText = ele.innerText
-        }
-    })
-});
+// dropItem.forEach(function(ele){
+//     ele.addEventListener('click', function(e){
+//         if(e.target == ele){
+//             dropText.innerText = ele.innerText
+//         }
+//     })
+// });
 
-window.addEventListener('click', function(e){
-    console.log(e.target)
-})
+
+
+class DropdownClass {
+    constructor(drpgrp){
+        dropbtn: "drpgrp.querySelector('.dropdown-btn')"
+    }
+    // dropGroup: document.querySelector('.dropdown-group'),
+        // dropdownBtn: document.dropGroup.querySelector('.dropdown-btn'),
+}
+
+const drpgrp = document.querySelector('.dropdown-group2');
+ const testDrop = new DropdownClass(drpgrp);
+
+//  console.log(testDrop.dropbtn);
 
 // console.log(dropMenu)
